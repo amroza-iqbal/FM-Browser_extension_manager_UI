@@ -92,7 +92,7 @@ display: table;
     padding: 0;
     align-items: center;
     display: flex;
-    top: 39px;
+    top: 47px;
     right: 130px;
     font-size: 40px;
     border-radius: 15px;
@@ -124,9 +124,9 @@ display: table;
 }
 .button
 {
-    padding: 5px 13px;
+    padding: 8px 13px;
     border-radius: 20px;
-    text-decoration: none;
+    border: none;
     background-color: #3E3C61;
     color: #ffffff;
     text-align: center;
@@ -148,11 +148,13 @@ display: table;
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
+    align-items: center;
+    justify-content: center;
 }
 .box
 {
     float: left;
-    width: 30.33%;
+    width: 29.33%;
     padding: 10px 10px 70px 10px;
     background-color: #1E2A47;
     border-radius: 10px;
@@ -161,6 +163,7 @@ display: table;
     align-items: center;
     border: 1px solid #C5C5C5;
     position: relative;
+    height: 170px;
 }
 .txt-color
 {
@@ -238,7 +241,90 @@ display: table;
     bottom: 10px;
     right: 5px;
 }
+.active-ext
+{
+    display: block;
+}
+.inactive-ext
+{
+    display: block;
+}
 
+
+
+@media only screen and (max-width: 992px)
+{
+    body
+    {
+        padding: 30px 65px;
+    }
+    .main
+    {
+        gap: 28px;
+    }
+    .box
+    {
+        width: 30.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 315px;
+    }
+}
+
+
+@media only screen and (max-width: 768px)
+{
+    #theme-switch
+    {
+        right: 80px;
+    }
+    body
+    {
+        padding: 30px 50px;
+    }
+    .box
+    {
+        width: 44.33%;
+        height: 150px;
+    }
+    .box h1
+    {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    body
+    {
+        padding: 30px 45px;
+    }
+    #theme-switch
+    {
+        right: 65px;
+    }
+    .right
+    {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .left
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box
+    {
+        width: 73.33%;
+        height: auto;
+    }
+}
 
 @media only screen and (max-width: 375px)
 {
@@ -276,6 +362,7 @@ display: table;
     .box
     {
         width: 100%;
+        height: auto;
     }
     .bottom
     {
@@ -291,3 +378,5 @@ display: table;
         color: #1E2A47 !important;
     }
 }
+
+
